@@ -1,2 +1,5 @@
-# tettisivut
-Tetissä tehdyt nettisivut
+# Tettisivut
+
+Tetissä tehdyt nettisivut IT-lukion puolesta.
+
+
