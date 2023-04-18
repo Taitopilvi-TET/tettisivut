@@ -1,0 +1,356 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    height: 100%;
+}
+
+.content{
+    margin-left: 1%;
+}
+
+.nimi-pohjalla {
+    float: right;
+}
+
+.taitopilvilogo{
+    width: 70px;
+    height: auto;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+}
+
+.navbarbottom ul, .navbarbottomfer {
+    background-color: #69D2F1;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+.navbartop ul {
+    background-color: #69D2F1;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-top: 0;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    width: 100%;
+    font-size: 2em;
+}
+
+.navbar {
+    float: left;
+}
+
+.navbar .ul1 {
+    background-color: #b8bede;
+    width: 25%;
+    margin-left: 2%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-style: dotted;
+    border-color: lightgray;
+    margin-top: 0em;
+    display: inline-block;
+    padding-right: 8em;
+    padding-bottom: 10em;
+}
+
+.kuva {
+    width: 32em;
+    margin-left: 2%;
+}
+
+.kuva img {
+    display: block;
+    margin: 0 auto;
+}
+
+.mallitaulukko {
+    margin-left: 3em;
+    width: 12.5em;
+}
+
+table {
+    border: solid lightgray;
+    padding-top: 0em;
+}
+
+th {
+    border-right: dashed lightgray 0.13em;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+td {
+    text-align: right;
+    border-right: dashed lightgray 0.13em;
+    border-top: dashed lightgray 0.13em;
+}
+
+.galleria {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.galleriakuva {
+    width: 18.75em;
+}
+
+.navbartopfer ul {
+    background-color: #69D2F1;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    width: 77.5%;
+}
+
+
+.navbartopfer ul li:first-child, .navbartopfer ul li:last-child, .navbartop ul li:first-child {
+    border-left: none;
+}
+
+.content{
+    flex: 1;
+}
+.fercontent nav {
+    align-self: stretch;
+    margin-right: 0;
+    padding: 0 !important;
+    flex: 0.3;
+}
+
+.navbarfer .ul1 {
+    background-color: #b8bede;
+    width: 85%;
+    margin-left: 0;
+    margin-top: 0.5em;
+    height: 100%;
+    
+    margin-top: 0em;
+    display: inline-block;
+    
+    margin-right: 0em;
+    margin-bottom: 0em;
+    padding-right: 0;
+
+    padding-left: 12%;
+    margin-left: 0%;
+}
+
+.navbarbottomfer {
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+.youtube {
+    height: 22.5em;
+    
+}
+
+.navbartopfer .haku {
+    position: absolute;
+    right: 0;
+    top: 0.3%;
+    display: block;
+    margin: 0;
+}
+
+.ääni .teksti, .mp4div, .galleriakuva, .taul-otsikko, .kuva {
+    text-align: center;
+} 
+
+.youtube, video {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    margin-right: 0%;
+}
+
+.mp4 {
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+}
+
+.ääni .teksti {
+    width: 100%;
+}
+
+.ääni .teksti, .mp4div, .navbarfer, .galleriakuva, .navbartopfer, .kuva, .navbar, .navbartop, .navbarbottom ul, .navbarbottomfer ul, .navbarfermobile ul {
+    font-weight: bold;
+}
+
+.navbartopfer ul li, .navbartop ul li, .navbarbottom ul li, .navbarbottomfer ul li {
+    display: inline;
+}
+
+.navbartop ul li, .navbartopfer ul li {
+    border-left: 0.1em solid black;
+    padding-left: 0.4em;
+    padding-right: 0.1em;
+}
+
+.fercontent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+
+
+@media print {
+    .navbartop, .navbar, .navbartopfer, .navbarfer, .navbarbottom, .navbarbottomfer {
+      display: none;
+    }
+  
+    body {
+      margin-top: 0.5cm;
+      margin-left: 0.5cm;
+      margin-bottom: 0.5cm;
+      margin-right: 0.5cm;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .kuva {
+      float: none;
+      page-break-inside: avoid;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      page-break-inside: avoid;
+    }
+  }
+
+  @media all and (min-width: 601px) {
+    .navbarfermobile {
+        display: none;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    h1, h2, h3 {
+        clear: both;
+        margin: 0;
+    }
+
+    .navbar .ul1 {
+        border: 0;
+        top: 0em;
+        margin-right: 0;
+        margin-left: 10%;
+        margin-top: 5%;
+        padding-bottom: 3%;
+        position: relative;
+    
+        padding-right: 6em;
+        padding-left: 10%;
+    }
+
+    .navbarfermobile .ul1 {
+
+        background-color: #b8bede;
+        border: 0;
+        top: 0em;
+        margin-right: 0;
+        margin-left: 1%;
+        margin-top: 2%;
+
+        width: 25%;
+    
+        padding: 1%;
+        padding-bottom: 5.7%;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+
+        float: left;
+    }
+
+    .navbarfer {
+       display: none;
+    }
+
+    .youtube {
+        border: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .navbartopfer {order: 1;}
+    .navbarfermobile {order: 2;}
+    .content {order: 3;}
+
+    .navbartop, .navbartopfer {
+        float: left;
+    
+        top: 0em;
+        margin-top: 2%;
+        margin-left: 0%;
+        padding-right: 1%;
+        padding-bottom: 0;
+        padding-left: 1em;
+        width: 51.5%;
+    }
+
+    .navbartop ul, .navbartopfer ul {
+        padding-top: 1%;
+        padding-right: 1%;
+        padding-bottom: 3em;
+        padding-left: 1em;
+    }
+
+    .navbartop ul li, .navbartopfer ul li {
+        display: list-item;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        text-align: start;
+        padding-bottom: 0.2em;
+    }
+
+    .navbartopfer ul li:last-child {
+        display:flex;
+    }
+
+    .navbartopfer .haku {
+        position: relative;
+    }
+
+    .navbartop a, .navbartopfer a {
+        font-weight: normal;
+    }
+
+    .kuva {
+        width: 95%;
+        height: 40%;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}
