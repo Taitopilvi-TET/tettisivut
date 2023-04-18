@@ -4,15 +4,23 @@ body {
     height: 100%;
 }
 
-.content{
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
     margin-left: 1%;
+    flex-grow: 1;
 }
 
 .nimi-pohjalla {
     float: right;
 }
 
-.taitopilvilogo{
+.taitopilvilogo {
     width: 70px;
     height: auto;
     margin: 0;
@@ -25,6 +33,7 @@ body {
     background-color: #69D2F1;
     margin-left: 0em;
     margin-right: 0em;
+    margin-bottom: 0em;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.8em;
