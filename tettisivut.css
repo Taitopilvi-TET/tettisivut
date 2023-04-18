@@ -4,6 +4,7 @@ body {
     font-family: 'Fira Sans Condensed', sans-serif;
     margin: 0;
     height: 100%;
+    
 }
 
 h1, .navbartop, .navbarbottom {
@@ -20,6 +21,10 @@ h1, .navbartop, .navbarbottom {
 .content {
     margin-left: 1%;
     flex-grow: 1;
+    background-image: url(images\ \(6\).jpeg);
+    background-repeat: repeat;
+    background-size: 85vh;
+    
 }
 
 .nimi-pohjalla {
@@ -27,7 +32,7 @@ h1, .navbartop, .navbarbottom {
 }
 
 .taitopilvilogo {
-    width: 70px;
+    width: 300px;
     height: auto;
     margin: 0;
     padding-bottom: 0;
@@ -56,7 +61,7 @@ h1, .navbartop, .navbarbottom {
     padding-top: 0.4em;
     padding-bottom: 0.4em;
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .navbar {
@@ -314,9 +319,7 @@ td {
         margin-bottom: 2%;
     }
 
-    .navbartopfer {order: 1;}
-    .navbarfermobile {order: 2;}
-    .content {order: 3;}
+    
 
     .navbartop, .navbartopfer {
         float: left;
