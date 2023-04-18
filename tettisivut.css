@@ -1,3 +1,8 @@
+html, body {
+    margin: 0;
+    width: 100%;
+}
+
 body {
     font-family: 'Fira Sans Condensed', sans-serif;
     margin: 0;
@@ -25,6 +30,13 @@ h1, .navbartop, .navbarbottom {
     
 }
 
+.ryhmakuva {
+}
+
+.ryhmakuva img {
+    display: block;
+}
+
 .nimi-pohjalla {
     float: right;
 }
@@ -47,6 +59,10 @@ h1, .navbartop, .navbarbottom {
     padding-right: 1em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: middle;
+    /** Flexbox */
 }
 
 .navbartop ul {
@@ -254,18 +270,8 @@ td {
       page-break-inside: avoid;
     }
   }
-
-  @media all and (min-width: 601px) {
-    .navbarfermobile {
-        display: none;
-    }
-  }
-
+  
   @media all and (max-width: 600px) {
-    body {
-        margin: 0;
-        width: 100%;
-    }
 
     h1, h2, h3 {
         clear: both;
@@ -283,6 +289,10 @@ td {
     
         padding-right: 6em;
         padding-left: 10%;
+    }
+
+    .navbarbottom {
+        flex-direction: column;
     }
 
     .navbarfermobile .ul1 {
@@ -325,6 +335,7 @@ td {
         top: 0em;
         margin-top: 2%;
         margin-left: 0%;
+        margin-bottom: 0;
         padding-right: 1%;
         padding-bottom: 0;
         padding-left: 1em;
@@ -336,6 +347,7 @@ td {
         padding-right: 1%;
         padding-bottom: 3em;
         padding-left: 1em;
+        margin-bottom: 0;
     }
 
     .navbartop ul li, .navbartopfer ul li {
