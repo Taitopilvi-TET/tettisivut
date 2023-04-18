@@ -1,7 +1,13 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    /*https://fonts.google.com/specimen/Saira+Condensed?query=saira+conde otsikot*/
+    /**/
+    font-family: 'Fira Sans Condensed', sans-serif;
     margin: 0;
     height: 100%;
+}
+
+h1, .navbartop, .navbarbottom {
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 .flexbox {
